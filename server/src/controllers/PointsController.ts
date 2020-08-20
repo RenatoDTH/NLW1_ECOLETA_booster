@@ -39,6 +39,8 @@ class PointsController {
         })
    
         await trx('point_items').insert(pointItems);
+
+        await trx.commit();
    
         return res.json({
           id: point_id,
@@ -48,4 +50,4 @@ class PointsController {
 
 };
 
-export default PointsController;
+export default new PointsController();
