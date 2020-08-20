@@ -48,4 +48,4 @@ class PointsController {
 
 };
 
-export default new PointsController();
+export default PointsController;
