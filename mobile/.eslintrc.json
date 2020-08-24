@@ -1,6 +1,6 @@
 {
     "env": {
-        "es2020": true
+        "e2020": true
     },
     "extends": [
         "plugin:react/recommended",
@@ -23,24 +23,24 @@
         "prettier"
     ],
     "rules": {
-    "react/jsx-filename-extension": ["warn", { "extensions": [".jsx", ".js", ".tsx"] }],
-    "import/prefer-default-export": "off",
-    "react/jsx-one-expression-per-line": "off",
-    "global-require": "off",
-    "react-native/no-raw-text": "off",
-    "no-param-reassign": "off",
-    "no-underscore-dangle": "off",
-    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-    "camelcase": "off",
-    "react/jsx-props-no-spreading": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "react/prop-types": "off",
-    "no-unused-expressions": "off",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      { "ts": "never", "tsx": "never" }
-    ]
+        "react/jsx-filename-extension": ["warn", { "extensions": [".jsx", ".js", ".tsx"] }],
+        "import/prefer-default-export": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "global-require": "off",
+        "react-native/no-raw-text": "off",
+        "no-param-reassign": "off",
+        "no-underscore-dangle": "off",
+        "camelcase": "off",
+        "react/jsx-props-no-spreading": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "react/prop-types": "off",
+        "no-unused-expressions": "off",
+        "import/extensions": [
+        "error",
+        "ignorePackages",
+        { "ts": "never", "tsx": "never" }
+        ]
+        
     },
     "settings": { "import/resolver": { "typescript": {} } }
 }
