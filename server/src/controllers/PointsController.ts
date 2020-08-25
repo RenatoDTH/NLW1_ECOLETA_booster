@@ -61,7 +61,7 @@ class PointsController {
 
         const serializedPoint =  {
              ...point,
-            image_url: `192.168.1.33:3333/uploads/${point.image}`,  //para o expo é necessário utilizar o ip da máquina, por isso não localhost
+            image_url: `http://192.168.1.33:3333/uploads/${point.image}`,  //para o expo é necessário utilizar o ip da máquina, por isso não localhost
         };
 
         const items = await knex('items')
@@ -90,7 +90,7 @@ class PointsController {
         const serializedPoints = points.map(point => {
             return { 
                 ...point,
-                image_url: `192.168.1.33:3333/uploads/${point.image}`,  //para o expo é necessário utilizar o ip da máquina, por isso não localhost
+                image_url: `http://192.168.1.33:3333/uploads/${point.image}`,  //para o expo é necessário utilizar o ip da máquina, por isso não localhost
              }
         });
 
