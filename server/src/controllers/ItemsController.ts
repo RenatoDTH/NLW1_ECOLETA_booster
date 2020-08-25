@@ -9,7 +9,7 @@ class ItemsController {
             return { 
                 id: item.id,
                 title: item.title,
-                image_url: `192.168.1.33:3333/uploads/${item.image}`,  //para o expo é necessário utilizar o ip da máquina, por isso não localhost
+                image_url: `http://192.168.1.33:3333/uploads/${item.image}`,  //para o expo é necessário utilizar o ip da máquina, por isso não localhost
              }
         });
         return res.json(serializedItems);
